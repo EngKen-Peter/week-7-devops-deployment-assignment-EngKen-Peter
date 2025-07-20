@@ -4,21 +4,21 @@ const bugSchema = new mongoose.Schema(
   {
     title: {
       type: String,
-      required: true,
+      required: [true, 'Bug title is required'],
     },
     description: {
       type: String,
-      required: true,
-    },
-    priority: {
-      type: String,
-      enum: ['low', 'medium', 'high'],
-      default: 'medium',
+      required: [true, 'Bug description is required'],
     },
     status: {
       type: String,
       enum: ['open', 'in progress', 'closed'],
       default: 'open',
+    },
+    priority: {
+      type: String,
+      enum: ['low', 'medium', 'high'],
+      default: 'medium',
     },
   },
   {
@@ -26,6 +26,4 @@ const bugSchema = new mongoose.Schema(
   }
 );
 
-const Bug = mongoose.model('Bug', bugSchema);
-
-export default Bug;
+export const Bug = mongoose.model('Bug', bugSchema);
