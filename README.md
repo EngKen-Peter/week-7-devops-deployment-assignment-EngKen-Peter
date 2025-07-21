@@ -1,78 +1,78 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19960131&assignment_repo_type=AssignmentRepo)
-# Deployment and DevOps for MERN Applications
+Week 7 – MERN Bug Tracker Deployment
+Overview
+This project is a MERN stack Bug Tracker that allows users to report, view, update, and delete bugs. It includes full-stack development and deployment using CI/CD practices.
 
-This assignment focuses on deploying a full MERN stack application to production, implementing CI/CD pipelines, and setting up monitoring for your application.
+Live Links
+Frontend: https://week-7-bug-tracker-iv8c4ca1x-kennedy-peters-projects-99f4df6f.vercel.app
 
-## Assignment Overview
+Backend API: https://week-7-bug-tracker-backend.onrender.com
 
-You will:
-1. Prepare your MERN application for production deployment
-2. Deploy the backend to a cloud platform
-3. Deploy the frontend to a static hosting service
-4. Set up CI/CD pipelines with GitHub Actions
-5. Implement monitoring and maintenance strategies
+Features
+User-friendly bug tracking interface
 
-## Getting Started
+Create, read, update, and delete bugs
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week7-Assignment.md` file
-4. Use the provided templates and configuration files as a starting point
+RESTful API with Express and MongoDB
 
-## Files Included
+Deployment of backend to Render
 
-- `Week7-Assignment.md`: Detailed assignment instructions
-- `.github/workflows/`: GitHub Actions workflow templates
-- `deployment/`: Deployment configuration files and scripts
-- `.env.example`: Example environment variable templates
-- `monitoring/`: Monitoring configuration examples
+Deployment of frontend to Vercel
 
-## Requirements
+GitHub Actions CI/CD workflows (partial)
 
-- A completed MERN stack application from previous weeks
-- Accounts on the following services:
-  - GitHub
-  - MongoDB Atlas
-  - Render, Railway, or Heroku (for backend)
-  - Vercel, Netlify, or GitHub Pages (for frontend)
-- Basic understanding of CI/CD concepts
+Technologies Used
+MongoDB
 
-## Deployment Platforms
+Express.js
 
-### Backend Deployment Options
-- **Render**: Easy to use, free tier available
-- **Railway**: Developer-friendly, generous free tier
-- **Heroku**: Well-established, extensive documentation
+React.js
 
-### Frontend Deployment Options
-- **Vercel**: Optimized for React apps, easy integration
-- **Netlify**: Great for static sites, good CI/CD
-- **GitHub Pages**: Free, integrated with GitHub
+Node.js
 
-## CI/CD Pipeline
+Vite
 
-The assignment includes templates for setting up GitHub Actions workflows:
-- `frontend-ci.yml`: Tests and builds the React application
-- `backend-ci.yml`: Tests the Express.js backend
-- `frontend-cd.yml`: Deploys the frontend to your chosen platform
-- `backend-cd.yml`: Deploys the backend to your chosen platform
+Tailwind CSS
 
-## Submission
+Render
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+Vercel
 
-1. Complete all deployment tasks
-2. Set up CI/CD pipelines with GitHub Actions
-3. Deploy both frontend and backend to production
-4. Document your deployment process in the README.md
-5. Include screenshots of your CI/CD pipeline in action
-6. Add URLs to your deployed applications
+GitHub Actions
 
-## Resources
+Backend Setup
+Navigate to the backend folder.
 
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [MongoDB Atlas Documentation](https://docs.atlas.mongodb.com/)
-- [Render Documentation](https://render.com/docs)
-- [Railway Documentation](https://docs.railway.app/)
-- [Vercel Documentation](https://vercel.com/docs)
-- [Netlify Documentation](https://docs.netlify.com/) 
+Install dependencies with npm install.
+
+Create a .env file with your MongoDB URI and any other secrets.
+
+Run the server locally using npm run dev.
+
+Frontend Setup
+Navigate to the client folder.
+
+Install dependencies with npm install.
+
+Set the API base URL in environment variables.
+
+Start the development server using npm run dev.
+
+CI/CD (GitHub Actions)
+I attempted to set up GitHub Actions workflows for both frontend and backend deployment. However, the frontend workflow failed due to a missing package.json file path error. Despite troubleshooting, I was unable to resolve it in time but all core deployment goals were achieved manually.
+
+Screenshots
+
+1. Frontend Unit Tests
+[Frontend Unit Tests](screenshots/frontend-unit-tests.png)
+
+2. Backend Coverage Report
+[Backend Coverage Report](screenshots/backend-coverage-report.png)
+
+3. E2E Cypress Test
+[E2E Cypress Test](screenshots/e2e-cypress-test.png)
+
+
+Author
+Kennedy Mbaluka Peter
+GitHub: https://github.com/EngKen-Peter
+
